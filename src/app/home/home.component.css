@@ -1,0 +1,86 @@
+
+.content{
+    position: relative;
+    display: flex;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 570px;
+}
+
+.content .textBox h2{
+    color: #0169b2;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+    font-weight: 700;
+    opacity: 0;
+    animation: slide_right 0.5s linear forwards;
+    animation-delay: 0.6s;
+}
+
+@keyframes slide_right{
+    0%
+    {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.content .textBox p{
+    font-size: 1.2em;
+    color: #333;
+    width: 500px;
+    opacity: 0;
+    animation: slide_left 0.5s linear forwards;
+    animation-delay: 1s;
+}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #ff5e8e;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 40px;
+    user-select: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: slide_top 0.5s linear forwards;
+    animation-delay: 1.3s;
+}
+
+
+.profile{
+    position: relative;
+    bottom: 0;
+    left: 130px;
+    top: 15px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fade_in 1s linear forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes fade_in{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
